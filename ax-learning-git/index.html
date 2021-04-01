@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="阿修的修行">
 <meta property="og:description" content="1.我自己平时用到的命令 2.哪里可以学？官网 廖雪峰 3.git和GitHub的关系 4.一篇文章介绍git的使用（常用操作）">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-03-19T03:12:13.340Z">
+<meta property="og:updated_time" content="2021-03-23T04:06:31.355Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【阿修】git学习笔记">
 <meta name="twitter:description" content="1.我自己平时用到的命令 2.哪里可以学？官网 廖雪峰 3.git和GitHub的关系 4.一篇文章介绍git的使用（常用操作）">
@@ -197,8 +197,13 @@
 <p><a href="https://www.cnblogs.com/shijieli/p/10535051.html" target="_blank" rel="noopener">https://www.cnblogs.com/shijieli/p/10535051.html</a></p>
 <p>（2021年3月19日11:08:37）git push 没有成功，设置代理后成功了，127.0.0.1表示本机，后面的端口改成自己的端口就行了。</p>
 <blockquote>
-<p>git config –global http.proxy 127.0.0.1:1087</p>
-<p>git设置代理模式，仅为github设置代理 - 简书 <a href="https://www.jianshu.com/p/8c5bb8eee8b2" target="_blank" rel="noopener">https://www.jianshu.com/p/8c5bb8eee8b2</a></p>
+<h3 id="设置代理："><a href="#设置代理：" class="headerlink" title="设置代理："></a>设置代理：</h3><h6 id="全局代理"><a href="#全局代理" class="headerlink" title="全局代理"></a>全局代理</h6><p>git config –global http.proxy 127.0.0.1:10080</p>
+<h6 id="局部代理，在github-clone-仓库内执行"><a href="#局部代理，在github-clone-仓库内执行" class="headerlink" title="局部代理，在github clone 仓库内执行"></a>局部代理，在github clone 仓库内执行</h6><p>git config –local http.proxy 127.0.0.1:10080</p>
+<h3 id="查询是否使用代理："><a href="#查询是否使用代理：" class="headerlink" title="查询是否使用代理："></a>查询是否使用代理：</h3><h6 id="查询全局代理"><a href="#查询全局代理" class="headerlink" title="查询全局代理"></a>查询全局代理</h6><p>git config –global http.proxy</p>
+<h6 id="查询局部代理"><a href="#查询局部代理" class="headerlink" title="查询局部代理"></a>查询局部代理</h6><p>git config –local http.proxy</p>
+<h3 id="取消代理："><a href="#取消代理：" class="headerlink" title="取消代理："></a>取消代理：</h3><p>git config –global –unset http.proxy<br> git config –local –unset http.proxy</p>
+<p>git设置代理模式，仅为github设置代理 - 简书</p>
+<p><a href="https://www.jianshu.com/p/8c5bb8eee8b2" target="_blank" rel="noopener">https://www.jianshu.com/p/8c5bb8eee8b2</a></p>
 </blockquote>
 
       
@@ -263,11 +268,11 @@
   
 <nav id="article-nav">
   
-    <a href="/ax-learning-python-liaoxuefeng/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/ax-reading-everyday/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          【阿修】Python学习笔记 - 廖雪峰教程
+          【阿修】读万卷书，行万里路
         
       </div>
     </a>
@@ -301,7 +306,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-我自己平时用到的命令"><span class="toc-number">1.</span> <span class="toc-text">1.我自己平时用到的命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-哪里有教程"><span class="toc-number">2.</span> <span class="toc-text">2.哪里有教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-一些使用中遇到的问题"><span class="toc-number">3.</span> <span class="toc-text">3.一些使用中遇到的问题</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-我自己平时用到的命令"><span class="toc-number">1.</span> <span class="toc-text">1.我自己平时用到的命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-哪里有教程"><span class="toc-number">2.</span> <span class="toc-text">2.哪里有教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-一些使用中遇到的问题"><span class="toc-number">3.</span> <span class="toc-text">3.一些使用中遇到的问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#设置代理："><span class="toc-number">3.1.</span> <span class="toc-text">设置代理：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#全局代理"><span class="toc-number">3.1.0.0.1.</span> <span class="toc-text">全局代理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#局部代理，在github-clone-仓库内执行"><span class="toc-number">3.1.0.0.2.</span> <span class="toc-text">局部代理，在github clone 仓库内执行</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#查询是否使用代理："><span class="toc-number">3.2.</span> <span class="toc-text">查询是否使用代理：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#查询全局代理"><span class="toc-number">3.2.0.0.1.</span> <span class="toc-text">查询全局代理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#查询局部代理"><span class="toc-number">3.2.0.0.2.</span> <span class="toc-text">查询局部代理</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#取消代理："><span class="toc-number">3.3.</span> <span class="toc-text">取消代理：</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -414,10 +419,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Ax</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">

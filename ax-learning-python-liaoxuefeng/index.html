@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://lucky2018.github.io">
   <title>【阿修】Python学习笔记 - 廖雪峰教程 | 阿修的修行</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我是阿修，B站账号【阿修的修行】。 这是我的Python学习笔记，来和我一起刷廖雪峰Python教程吧。 这是比较难的部分，包括map、reduce、filter、sorted、返回函数和闭包、匿名函数、装饰器、偏函数、模块、面向对象编程等。 最近的更新时间：2021年3月20日20:31:13">
+  <meta name="description" content="我是阿修，B站账号【阿修的修行】。 这是我的Python学习笔记，来和我一起刷廖雪峰Python教程吧。 这是比较难的部分，包括map、reduce、filter、sorted、返回函数和闭包、匿名函数、装饰器、偏函数、模块、面向对象编程等。 （2021年3月23日02:51:32）">
 <meta name="keywords" content="Ax,Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【阿修】Python学习笔记 - 廖雪峰教程">
 <meta property="og:url" content="https://lucky2018.github.io/ax-learning-python-liaoxuefeng/index.html">
 <meta property="og:site_name" content="阿修的修行">
-<meta property="og:description" content="我是阿修，B站账号【阿修的修行】。 这是我的Python学习笔记，来和我一起刷廖雪峰Python教程吧。 这是比较难的部分，包括map、reduce、filter、sorted、返回函数和闭包、匿名函数、装饰器、偏函数、模块、面向对象编程等。 最近的更新时间：2021年3月20日20:31:13">
+<meta property="og:description" content="我是阿修，B站账号【阿修的修行】。 这是我的Python学习笔记，来和我一起刷廖雪峰Python教程吧。 这是比较难的部分，包括map、reduce、filter、sorted、返回函数和闭包、匿名函数、装饰器、偏函数、模块、面向对象编程等。 （2021年3月23日02:51:32）">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-03-20T12:31:25.351Z">
+<meta property="og:updated_time" content="2021-03-22T18:51:40.394Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【阿修】Python学习笔记 - 廖雪峰教程">
-<meta name="twitter:description" content="我是阿修，B站账号【阿修的修行】。 这是我的Python学习笔记，来和我一起刷廖雪峰Python教程吧。 这是比较难的部分，包括map、reduce、filter、sorted、返回函数和闭包、匿名函数、装饰器、偏函数、模块、面向对象编程等。 最近的更新时间：2021年3月20日20:31:13">
+<meta name="twitter:description" content="我是阿修，B站账号【阿修的修行】。 这是我的Python学习笔记，来和我一起刷廖雪峰Python教程吧。 这是比较难的部分，包括map、reduce、filter、sorted、返回函数和闭包、匿名函数、装饰器、偏函数、模块、面向对象编程等。 （2021年3月23日02:51:32）">
   
     <link rel="alternative" href="/atom.xml" title="阿修的修行" type="application/atom+xml">
   
@@ -170,7 +170,7 @@
 
         
         <a href="/ax-learning-python-liaoxuefeng/" class="archive-article-date">
-  	<time datetime="2021-03-20T12:31:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-20</time>
+  	<time datetime="2021-03-22T18:51:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-23</time>
 </a>
         
       </header>
@@ -180,7 +180,7 @@
         <p>我是阿修，B站账号【阿修的修行】。</p>
 <p>这是我的Python学习笔记，来和我一起刷廖雪峰Python教程吧。</p>
 <p>这是比较难的部分，包括map、reduce、filter、sorted、返回函数和闭包、匿名函数、装饰器、偏函数、模块、面向对象编程等。</p>
-<p>最近的更新时间：2021年3月20日20:31:13</p>
+<p>（2021年3月23日02:51:32）</p>
 <a id="more"></a>
 
 <h2 id="map函数"><a href="#map函数" class="headerlink" title="map函数"></a>map函数</h2><p>接收的参数：函数、可迭代对象</p>
@@ -710,6 +710,9 @@
 <p><a href="https://www.jianshu.com/p/dae61c60f323" target="_blank" rel="noopener">https://www.jianshu.com/p/dae61c60f323</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/179265105" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/179265105</a></p>
 <p><a href="http://www.bjhee.com/python-mixin.html" target="_blank" rel="noopener">http://www.bjhee.com/python-mixin.html</a></p>
+<p>网站那个例子，TCP 的运行不了，应该是 ForkingMixIn 的问题，猜测是因为 Windows 没有 fork 功能。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> socketserver <span class="keyword">import</span> TCPServer,ThreadingMixIn</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyUDPServer</span><span class="params">(UDPServer, ThreadingMixIn)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># https://blog.csdn.net/wowotouweizi/article/details/44085171</span></span><br><span class="line"><span class="comment"># from socketserver import TCPServer</span></span><br><span class="line"><span class="comment"># https://blog.csdn.net/caicaiatnbu/article/details/84873257</span></span><br><span class="line"><span class="comment"># https://www.v2ex.com/t/437625</span></span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -787,8 +790,8 @@
     </a>
   
   
-    <a href="/ax-learning-git/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">【阿修】git学习笔记</div>
+    <a href="/ax-reading-everyday/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">【阿修】读万卷书，行万里路</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -928,10 +931,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Ax</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
